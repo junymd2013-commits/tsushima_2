@@ -2,6 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 
+from matplotlib import font_manager
+font_manager.fontManager.addfont("ipaexg.ttf")
+plt.rcParams["font.family"] = "IPAexGothic"
+
 st.title("箱ひげ図の問題自動生成（数学B）")
 
 # データ生成
